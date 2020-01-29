@@ -115,11 +115,14 @@
 </style>
 
 <p>
-  Le contenu est collé automatiquement dans le presse-papier.
+  En se positionnant dans un champ, son contenu est collé automatiquement dans
+  le presse-papier (
+  <code>Ctrl-C</code>
+  inutile).
   <br />
   Le contenu
   <span class="hi bold">rose</span>
-  doit être collé dans la source HTML.
+  doit être collé dans Novis OS dans l'éditeur de source HTML.
 </p>
 
 {#each data as film}
