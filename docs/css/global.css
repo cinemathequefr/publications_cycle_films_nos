@@ -1,0 +1,316 @@
+/* @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro|Nunito+Sans:400,600,700,800,900&display=swap"); */
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700|Nunito+Sans:400,600,700,800,900&display=swap");
+@import url("./fonts.css");
+
+html {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-size: 100%;
+}
+
+body {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "IBM Plex Sans", "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  background-color: #fff;
+  color: #111;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  color: rgb(0, 100, 200);
+  text-decoration: none;
+}
+
+/* a:hover {
+  text-decoration: underline;
+}
+
+a:visited {
+  color: rgb(0, 80, 160);
+} */
+
+label {
+  display: block;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+  font-family: "IBM Plex Sans";
+  font-size: inherit;
+  padding: 0.4em;
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+}
+
+select {
+  font-family: inherit;
+  font-size: inherit;
+  /* padding: 0.4em; */
+  margin: 0 0 0.5em 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 0;
+}
+
+input:disabled {
+  color: #ccc;
+}
+
+input[type="range"] {
+  height: 0;
+}
+
+button {
+  background-color: #f4f4f4;
+  outline: none;
+}
+
+button:active {
+  background-color: #ddd;
+}
+
+button:focus {
+  border-color: #666;
+}
+
+ul,
+li {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksandcf;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: -0.05rem;
+}
+
+.typeCycle {
+  margin: 0;
+  padding: 0;
+  font-family: Quicksandcf;
+  font-weight: 300;
+  text-transform: uppercase;
+  font-size: 2rem;
+  line-height: 1.75rem;
+}
+
+.selector {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  display: inline-block;
+  background-color: #223;
+}
+
+.selector > select {
+  font-size: 0.875rem;
+  margin: 4px !important;
+}
+
+.menu {
+  height: 100px;
+  width: 100%;
+  margin-left: 0;
+  background-color: #223;
+}
+
+/* Les sections sont les principaux segments de page. */
+section {
+  display: block;
+  overflow: hidden;
+  width: 100%;
+  margin: 0;
+}
+
+/* section:nth-child(2n) {
+  background-color: #eef;
+} */
+
+/* Le conteneur principal de contenu est placé directement à l'intérieur d'un segment. */
+
+.menu > .container {
+  margin: 0 auto;
+  padding: 0 15px;
+  min-width: 330px;
+  max-width: 900px;
+  box-sizing: content-box; /* Pour exclure le padding du calcul de la largeur. */
+}
+section > .container {
+  margin: 30px auto;
+  padding: 15px;
+  min-width: 330px;
+  max-width: 900px;
+  /* max-width: 1100px; */
+  box-sizing: content-box; /* Pour exclure le padding du calcul de la largeur. */
+  /* background-color: #fff; */
+  /* outline: solid 1px red; */
+}
+
+.datesCycle {
+  margin: 0 0 12px 0;
+  font-family: Quicksandcf;
+  font-weight: 500;
+  font-size: 1.5rem;
+  letter-spacing: -0.05rem;
+  text-transform: uppercase;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.card {
+  width: 100%;
+  margin-bottom: 8px;
+  background-color: #fff;
+  padding: 8px 8px 36px 8px;
+  box-sizing: border-box;
+}
+
+.evenement-image {
+  display: none;
+  width: 100%;
+  background-color: #ccc;
+  padding-bottom: 56.25%;
+  margin-bottom: 4px;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.row {
+  /* position: relative;
+  width: 100%; */
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+.row > .col1 {
+  width: 66.67%;
+  /* width: 58.33%; */
+}
+
+.row > .col2 {
+  width: 33.33%;
+  /* width: 41.66%; */
+}
+
+.row > .col1 > img {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.iframe-container {
+  overflow: hidden;
+  padding-top: 56.25%;
+  position: relative;
+}
+
+.iframe-container > iframe {
+  border: 0;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.cycle-texte {
+  margin: 48px 0 48px 0;
+}
+
+@media (min-width: 640px) {
+  .card {
+    width: calc(50% - 8px);
+  }
+}
+
+@media (min-width: 768px) {
+  .card {
+    width: calc(33.33% - 8px);
+  }
+  .evenement-image {
+    display: block;
+  }
+}
+
+@media (min-width: 1280px) {
+  .card {
+    width: calc(25% - 8px);
+  }
+}
+
+ul.items-evenement > li {
+  margin-left: 0px;
+  margin-bottom: 2px;
+  padding-left: 6px;
+  border-left: solid 3px #ccc;
+}
+
+.titre-evenement {
+  font-size: 1.125rem;
+  padding-bottom: 6px;
+}
+
+.film-infos {
+  font-size: 0.875rem;
+}
+
+ul.seances {
+  margin-top: 8px;
+}
+
+ul.seances > li {
+  display: inline-block;
+  padding: 0 0 2px 2px;
+}
+
+ul.seances > li > a {
+  display: inline-block;
+  width: 9em;
+  border: solid 1px #000;
+  padding: 4px;
+  color: #000;
+  text-align: center;
+  font-size: 0.875rem;
+  font-weight: 400;
+  text-decoration: none;
+  transition: 100ms;
+}
+
+ul.seances > li > a:hover,
+ul.seances > li > a:hover {
+  background-color: #b2ccff;
+}
