@@ -158,7 +158,6 @@
         type="text"
         readonly
         on:click={sel}
-        class="hi"
         value={nbsp(converter.makeHtml(film.adaptation))} />
     {/if}
 
