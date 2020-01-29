@@ -46,6 +46,10 @@
     }
   }
 
+  function nop(str) {
+    return str.replace(/<\/?p>/gi, "");
+  }
+
   function copyTextToClipboard(text) {
     // https://stackoverflow.com/questions/400212/how-do-i-copy-to-the-clipboard-in-javascript
     if (!navigator.clipboard) {
@@ -161,7 +165,7 @@
         type="text"
         readonly
         on:click={sel}
-        value={nbsp(converter.makeHtml(film.adaptation))} />
+        value={nop(nbsp(converter.makeHtml(film.adaptation)))} />
     {/if}
 
     {#if film.textes}
