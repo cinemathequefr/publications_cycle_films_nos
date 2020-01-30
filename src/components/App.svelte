@@ -44,6 +44,10 @@
 
     data = await fetch(e.target.value);
     data = await data.json();
+
+    data = _(data)
+      .sortBy(d => _.kebabCase(d.titre))
+      .value();
   }
 </script>
 
