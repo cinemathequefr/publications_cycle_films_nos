@@ -116,6 +116,10 @@
     font-size: 0.875rem;
     color: #666;
   }
+
+  .pk a {
+    color: inherit;
+  }
 </style>
 
 <p>
@@ -126,13 +130,17 @@
   <br />
   Le contenu
   <span class="hi bold">rose</span>
-  doit être collé dans Novis OS dans l'éditeur de source HTML.
+  doit être collé dans Novius OS dans l'éditeur de source HTML.
 </p>
 
 {#each data as film}
   <div class="film">
 
-    <div class="pk">{film.idFilm}</div>
+    <div class="pk">
+      <a href="https://www.cinematheque.fr/film/{film.idFilm}.html">
+        {film.idFilm}
+      </a>
+    </div>
 
     <input
       class="bold"
