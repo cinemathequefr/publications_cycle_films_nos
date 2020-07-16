@@ -46,6 +46,12 @@
     }
   }
 
+  /**
+   * nop
+   * Retire les balises `p` d'un fragment HTML.
+   * @param {string} str
+   * @return {string}
+   */
   function nop(str) {
     return str.replace(/<\/?p>/gi, "");
   }
