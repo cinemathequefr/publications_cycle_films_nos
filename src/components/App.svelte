@@ -7,7 +7,7 @@
     _(b)
       .map((c) => [
         c[1],
-        `https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/master/data/PROG78 Décembre 2020-février 2021/PROG78_CYCL${c[0]} ${c[1]}/editable/PROG78_CYCL${c[0]}_FILMS_EDIT ${c[1]}.json`,
+        `https://raw.githubusercontent.com/cinemathequefr/Publications_cycles/main/data/PROG78 Décembre 2020-février 2021/PROG78_CYCL${c[0]} ${c[1]}/editable/PROG78_CYCL${c[0]}_FILMS_EDIT ${c[1]}.json`,
       ])
       .sortBy((c) => _.kebabCase(c[0]))
       .value())([
